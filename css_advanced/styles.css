@@ -134,8 +134,37 @@ h2 {
     display: flex;
     justify-content: center;
     padding: 6rem 10rem;
-    border: 2px solid red;
     gap: 4rem;
     background-color: #C271FF;
     color: #ffffff;
+}
+
+.video-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+}
+
+#popular {
+    color: #C271FF;
+}
+
+#tutorials {
+    color: #000000;
+}
+
+.videos {
+    display: flex;
+    border: 2px solid green;
+}
+
+.account {
+    display: flex;
+    gap: 1rem;
+}
+
+.stars {
+    background-color: #000000;
+    color: #C271FF;
 }
