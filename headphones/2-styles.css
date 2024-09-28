@@ -107,11 +107,14 @@ a {
     align-items: center; 
 }
 
-h2 {
+.hero-text-h2 {
     padding-top: 60%;
+   
+}
+h2 {
+    text-align: center;
     color: var(--text-color);
 }
-
 p {
     padding-bottom: 2rem;
     text-align: center;
@@ -176,24 +179,30 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
     width: 100vw;
     background-image: url("./images/our-results-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 8rem 4rem 4rem 4rem;
 }
 
 
 .our-results-text {
-    padding-top: 0;
-    border: 2px solid blue;
-}
-
-h2 {
-   text-align: center;
+    padding-bottom: 4rem;
 }
 
 .our-results-images {
-    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
 }
+
+.our-results-h2 {
+    padding: 2rem 0;
+}
+
+/* .overlay-text {
+    position: absolute;
+} */
