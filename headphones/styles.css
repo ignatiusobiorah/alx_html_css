@@ -9,6 +9,7 @@
 
 :root {
     --text-color: #ffffff;
+    --secondary-text-color: #000000;
     --main-color: #FF6565;
 }
 
@@ -47,10 +48,58 @@ ul {
     gap: 2rem;
 }
 
-#hamburger {
-    color: var(--text-color);
+a {
+    color: #ffffff;
 }
 
+#hamburger {
+    color: var(--text-color);
+    display: none;
+}
+
+@media (max-width:1280px) {
+    header {
+        padding: 14px;
+        transition: .2s;
+    }
+    nav a {
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px) {
+    #hamburger {
+        display: block;
+    }
+
+    .navbar {
+        position:absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 29vh;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover {
+        color: var(--secondary-text-color);
+        transform: translateY(5px);
+    }
+
+    .navbar a.active {
+        color: var(--text-color);
+    }
+
+    .navbar.open {
+        right: 2%;
+    }
+}
 .hero-text {
     display: flex;
     flex-direction: column;
@@ -83,6 +132,39 @@ button {
 }
 
 /* To create shadow effecct on the text before the button */
-.minor-hero-text {
+/* .minor-hero-text {
     text-shadow: 2px solid #000000;
+} */
+
+/* Styling what-we-do-section */
+/* .what-we-do {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+
+} */
+/* .icons {
+    gap: 1rem;
+} */
+/* .icon-text {
+    color: var(--secondary-text-color);
+    text-align: center;
+    
+} */
+
+/* .what-we-do-icons {
+    padding-top: 4rem;
+    display: flex;
+    gap: 2rem;
 }
+
+h4 {
+    padding-bottom: 1rem;
+}
+
+h3 {
+    padding-bottom: 1rem;
+} */
